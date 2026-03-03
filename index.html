@@ -6,39 +6,18 @@
     
     <title>CloudNext | VPS DigitalOcean Tanpa Kartu Kredit</title>
     <meta name="description" content="Deploy VPS DigitalOcean dalam hitungan detik tanpa Kartu Kredit. Infrastruktur enterprise, harga lokal, dan nikmati Free Trial sekarang juga.">
-    <meta name="keywords" content="vps digitalocean, vps murah, vps tanpa kartu kredit, vps indonesia, cloudnext, hosting bot telegram, vps ubuntu murah">
-    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="vps digitalocean, vps murah, vps tanpa kartu kredit, vps indonesia, cloudnext">
     <link rel="canonical" href="https://cloudnext.my.id/" />
-
     <meta property="og:title" content="CloudNext | VPS DigitalOcean Tanpa Kartu Kredit">
     <meta property="og:description" content="Deploy VPS DigitalOcean dalam hitungan detik tanpa Kartu Kredit. Infrastruktur enterprise, dan nikmati Free Trial sekarang.">
     <meta property="og:url" content="https://cloudnext.my.id/">
     <meta property="og:type" content="website">
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "CloudNext",
-      "url": "https://cloudnext.my.id/",
-      "description": "Layanan VPS DigitalOcean Tanpa Kartu Kredit di Indonesia."
-    }
-    </script>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-
-    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'">
-
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
-
-    <noscript>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap">
-    </noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -60,7 +39,7 @@
             box-sizing: border-box;
         }
 
-        /* Ambient Glow Effects - Meringankan CPU dengan will-change */
+        /* Ambient Glow Effects - will-change membantu kinerja CPU */
         .glow-wrapper {
             position: fixed;
             top: 0; left: 0; right: 0; bottom: 0;
@@ -93,7 +72,7 @@
             -webkit-text-fill-color: transparent;
         }
 
-        /* CSS UNTUK ANIMASI MARQUEE REVIEWS */
+        /* CSS ANIMASI MARQUEE */
         .marquee-container {
             display: flex;
             overflow: hidden;
@@ -130,7 +109,7 @@
             to { transform: translateX(0); }
         }
 
-        /* CSS UNTUK FAKE NOTIFICATION TOAST */
+        /* CSS FAKE NOTIFICATION */
         .fake-toast {
             position: fixed;
             bottom: 20px;
@@ -138,7 +117,6 @@
             z-index: 100;
             transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
             opacity: 0;
-            will-change: left, opacity;
         }
         .fake-toast.show {
             left: 20px;
@@ -172,7 +150,7 @@
                     <span class="font-extrabold text-xl tracking-tight text-white">CloudNext</span>
                 </div>
 
-                <nav class="hidden md:flex space-x-8" aria-label="Menu Navigasi Utama">
+                <nav class="hidden md:flex space-x-8" aria-label="Menu Utama">
                     <a href="#fitur" class="text-slate-300 hover:text-sky-400 text-sm font-semibold transition-colors">Fitur</a>
                     <a href="#komparasi" class="text-slate-300 hover:text-sky-400 text-sm font-semibold transition-colors">Komparasi</a>
                     <a href="#klien" class="text-slate-300 hover:text-sky-400 text-sm font-semibold transition-colors">Klien</a>
@@ -250,7 +228,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6">
                     <div class="glass-panel p-6 sm:p-8 rounded-3xl hover:bg-slate-800/50 transition-all border border-slate-800 hover:border-sky-500/30 group">
                         <div class="w-12 h-12 sm:w-14 sm:h-14 bg-sky-500/10 border border-sky-500/20 rounded-xl sm:rounded-2xl flex items-center justify-center text-xl sm:text-2xl text-sky-400 mb-5 sm:mb-6 group-hover:scale-110 transition-transform mx-auto md:mx-0">
-                            <i class="fas fa-credit-card relative" aria-hidden="true"><i class="fas fa-slash absolute text-red-500 text-2xl sm:text-3xl opacity-80" style="top: -2px; left: -2px;"></i></i>
+                            <i class="fas fa-credit-card relative" aria-hidden="true"><i class="fas fa-slash absolute text-red-500 text-2xl sm:text-3xl opacity-80" style="top: -2px; left: -2px;" aria-hidden="true"></i></i>
                         </div>
                         <h3 class="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3 text-center md:text-left">Tanpa Kartu Kredit</h3>
                         <p class="text-slate-400 text-xs sm:text-sm leading-relaxed text-center md:text-left">Halangan terbesar developer Indonesia telah kami hapus. Isi saldo via Admin menggunakan QRIS/E-Wallet lokal, dan langsung deploy.</p>
@@ -405,7 +383,7 @@
                 <h2 class="text-2xl sm:text-3xl font-bold text-white mb-2">Apa Kata Pengguna?</h2>
                 <div class="flex items-center justify-center gap-2 mb-2">
                     <span class="text-3xl font-black text-white">4.8</span>
-                    <div class="flex text-yellow-400 text-sm" aria-label="Rating 4.8 dari 5 Bintang">
+                    <div class="flex text-yellow-400 text-sm">
                         <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star-half-alt" aria-hidden="true"></i>
                     </div>
                 </div>
@@ -590,7 +568,7 @@
         </section>
     </main>
 
-    <footer class="border-t border-slate-800/80 bg-slate-950 pt-12 pb-8 px-4 w-full relative z-10">
+    <footer class="border-t border-slate-800/80 bg-slate-950 pt-12 pb-8 px-4 w-full">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
             <div class="flex items-center gap-3">
                 <i class="fas fa-cloud text-sky-500 text-xl sm:text-2xl" aria-hidden="true"></i>
@@ -620,45 +598,41 @@
         </div>
     </div>
 
-    <script defer>
-        document.addEventListener("DOMContentLoaded", function() {
-            // Navbar scroll effect
+    <script>
+        window.addEventListener('scroll', () => {
             const nav = document.getElementById('navbar');
-            window.addEventListener('scroll', () => {
-                if (window.scrollY > 20) {
-                    nav.classList.add('bg-slate-950/80', 'shadow-xl');
-                    nav.classList.remove('border-b-0');
-                } else {
-                    nav.classList.remove('bg-slate-950/80', 'shadow-xl');
-                    nav.classList.add('border-b-0');
-                }
-            });
-
-            // Fake Notification Logic
-            const toast = document.getElementById('sales-toast');
-            const tUser = document.getElementById('toast-user');
-            const tItem = document.getElementById('toast-item');
-            const tTime = document.getElementById('toast-time');
-
-            const fakeUsers = ['Alvin***', 'Bagas***', 'Citra***', 'Dendi***', 'Eka***', 'Fajar***', 'Galih***', 'Hana***', 'Irfan***', 'Joko***', 'Kiki***'];
-            const fakeItems = ['VPS 1GB RAM', 'VPS 2GB RAM', 'VPS 4GB RAM', 'Topup Saldo Rp50.000', 'Topup Saldo Rp100.000', 'VPS 1GB RAM (SGP)'];
-            const fakeTimes = ['Baru saja', '1 menit yang lalu', '3 menit yang lalu', '5 menit yang lalu', '10 menit yang lalu'];
-
-            function showFakeNotification() {
-                tUser.innerText = fakeUsers[Math.floor(Math.random() * fakeUsers.length)];
-                tItem.innerText = fakeItems[Math.floor(Math.random() * fakeItems.length)];
-                tTime.innerText = fakeTimes[Math.floor(Math.random() * fakeTimes.length)];
-                
-                toast.classList.add('show');
-                
-                setTimeout(() => { toast.classList.remove('show'); }, 5000);
-                
-                const nextDelay = Math.floor(Math.random() * (20000 - 8000 + 1)) + 8000;
-                setTimeout(showFakeNotification, nextDelay);
+            if (window.scrollY > 20) {
+                nav.classList.add('bg-slate-950/80', 'shadow-xl');
+                nav.classList.remove('border-b-0');
+            } else {
+                nav.classList.remove('bg-slate-950/80', 'shadow-xl');
+                nav.classList.add('border-b-0');
             }
-
-            setTimeout(showFakeNotification, 3000);
         });
+
+        const toast = document.getElementById('sales-toast');
+        const tUser = document.getElementById('toast-user');
+        const tItem = document.getElementById('toast-item');
+        const tTime = document.getElementById('toast-time');
+
+        const fakeUsers = ['Alvin***', 'Bagas***', 'Citra***', 'Dendi***', 'Eka***', 'Fajar***', 'Galih***', 'Hana***', 'Irfan***', 'Joko***', 'Kiki***'];
+        const fakeItems = ['VPS 1GB RAM', 'VPS 2GB RAM', 'VPS 4GB RAM', 'Topup Saldo Rp50.000', 'Topup Saldo Rp100.000', 'VPS 1GB RAM (SGP)'];
+        const fakeTimes = ['Baru saja', '1 menit yang lalu', '3 menit yang lalu', '5 menit yang lalu', '10 menit yang lalu'];
+
+        function showFakeNotification() {
+            tUser.innerText = fakeUsers[Math.floor(Math.random() * fakeUsers.length)];
+            tItem.innerText = fakeItems[Math.floor(Math.random() * fakeItems.length)];
+            tTime.innerText = fakeTimes[Math.floor(Math.random() * fakeTimes.length)];
+            
+            toast.classList.add('show');
+            
+            setTimeout(() => { toast.classList.remove('show'); }, 5000);
+            
+            const nextDelay = Math.floor(Math.random() * (20000 - 8000 + 1)) + 8000;
+            setTimeout(showFakeNotification, nextDelay);
+        }
+
+        setTimeout(showFakeNotification, 3000);
     </script>
 </body>
 </html>
