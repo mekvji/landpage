@@ -4,38 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
-    <title>CloudNext | VPS DigitalOcean Tanpa Kartu Kredit Indonesia</title>
-    <meta name="description" content="Deploy VPS DigitalOcean dalam hitungan detik tanpa Kartu Kredit. Infrastruktur enterprise, harga lokal, 100% Root Access, dan nikmati Free Trial sekarang juga.">
-    <meta name="keywords" content="vps digitalocean, vps murah, vps tanpa kartu kredit, cloudnext, vps indonesia, digitalocean rupiah, hosting bot telegram">
-    <meta name="author" content="CloudNext">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <title>CloudNext | VPS DigitalOcean Tanpa Kartu Kredit</title>
+    <meta name="description" content="Deploy VPS DigitalOcean dalam hitungan detik tanpa Kartu Kredit. Infrastruktur enterprise, harga lokal, dan nikmati Free Trial sekarang juga.">
+    <meta name="keywords" content="vps digitalocean, vps murah, vps tanpa kartu kredit, vps indonesia, cloudnext, hosting bot telegram, vps ubuntu murah">
+    <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://cloudnext.my.id/" />
 
     <meta property="og:title" content="CloudNext | VPS DigitalOcean Tanpa Kartu Kredit">
     <meta property="og:description" content="Deploy VPS DigitalOcean dalam hitungan detik tanpa Kartu Kredit. Infrastruktur enterprise, dan nikmati Free Trial sekarang.">
     <meta property="og:url" content="https://cloudnext.my.id/">
     <meta property="og:type" content="website">
-    <meta property="og:locale" content="id_ID">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "CloudNext",
+      "url": "https://cloudnext.my.id/",
+      "description": "Layanan VPS DigitalOcean Tanpa Kartu Kredit di Indonesia."
+    }
+    </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-    
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'">
+
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+
     <noscript>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap">
     </noscript>
 
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
-        /* ========================================== */
-        /* 3. OPTIMASI CSS & HARDWARE ACCELERATION    */
-        /* ========================================== */
+        /* PENGUNCIAN LAYOUT MUTLAK */
         html, body {
             background-color: #020617;
             color: #f8fafc;
@@ -47,32 +55,103 @@
             padding: 0;
             position: relative;
         }
-        *, *::before, *::after { box-sizing: border-box; }
 
-        /* Meringankan beban CPU saat animasi berjalan (Hardware Acceleration) */
-        .marquee-content, .fake-toast, .glow-bg {
-            will-change: transform, opacity;
+        *, *::before, *::after {
+            box-sizing: border-box;
         }
 
-        .glow-wrapper { position: fixed; top: 0; left: 0; right: 0; bottom: 0; width: 100vw; height: 100vh; overflow: hidden; pointer-events: none; z-index: 0; }
-        .glow-bg { position: absolute; width: 600px; height: 600px; background: radial-gradient(circle, rgba(56,189,248,0.15) 0%, rgba(0,0,0,0) 70%); border-radius: 50%; }
+        /* Ambient Glow Effects - Meringankan CPU dengan will-change */
+        .glow-wrapper {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            width: 100vw; height: 100vh;
+            overflow: hidden;
+            pointer-events: none;
+            z-index: 0;
+        }
+        .glow-bg {
+            position: absolute;
+            width: 600px; height: 600px;
+            background: radial-gradient(circle, rgba(56,189,248,0.15) 0%, rgba(0,0,0,0) 70%);
+            border-radius: 50%;
+            will-change: transform;
+        }
         .glow-top-left { top: -200px; left: -200px; }
         .glow-bottom-right { bottom: -200px; right: -200px; background: radial-gradient(circle, rgba(99,102,241,0.15) 0%, rgba(0,0,0,0) 70%); }
         .glow-center { top: 50%; left: 50%; transform: translate(-50%, -50%); background: radial-gradient(circle, rgba(16,185,129,0.08) 0%, rgba(0,0,0,0) 70%); width: 800px; height: 800px; }
-        .glass-panel { background: rgba(15, 23, 42, 0.6); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.05); }
-        .gradient-text { background: linear-gradient(to right, #38bdf8, #818cf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+        .glass-panel {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .gradient-text {
+            background: linear-gradient(to right, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* CSS UNTUK ANIMASI MARQUEE REVIEWS */
+        .marquee-container {
+            display: flex;
+            overflow: hidden;
+            user-select: none;
+            gap: 1.5rem;
+            padding: 1rem 0;
+        }
         
-        .marquee-container { display: flex; overflow: hidden; user-select: none; gap: 1.5rem; padding: 1rem 0; }
-        .marquee-content { flex-shrink: 0; display: flex; justify-content: space-around; min-width: 100%; gap: 1.5rem; animation: scroll-x 25s linear infinite; }
-        .marquee-content.reverse { animation: scroll-x-reverse 30s linear infinite; }
-        .marquee-container:hover .marquee-content { animation-play-state: paused; }
-        
-        @keyframes scroll-x { from { transform: translateX(0); } to { transform: translateX(calc(-100% - 1.5rem)); } }
-        @keyframes scroll-x-reverse { from { transform: translateX(calc(-100% - 1.5rem)); } to { transform: translateX(0); } }
-        
-        .fake-toast { position: fixed; bottom: 20px; left: -400px; z-index: 100; transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55); opacity: 0; }
-        .fake-toast.show { left: 20px; opacity: 1; }
-        @media (max-width: 640px) { .fake-toast { bottom: 10px; left: -100%; width: calc(100% - 20px); } .fake-toast.show { left: 10px; } }
+        .marquee-content {
+            flex-shrink: 0;
+            display: flex;
+            justify-content: space-around;
+            min-width: 100%;
+            gap: 1.5rem;
+            animation: scroll-x 25s linear infinite;
+            will-change: transform;
+        }
+
+        .marquee-content.reverse {
+            animation: scroll-x-reverse 30s linear infinite;
+        }
+
+        .marquee-container:hover .marquee-content {
+            animation-play-state: paused;
+        }
+
+        @keyframes scroll-x {
+            from { transform: translateX(0); }
+            to { transform: translateX(calc(-100% - 1.5rem)); }
+        }
+
+        @keyframes scroll-x-reverse {
+            from { transform: translateX(calc(-100% - 1.5rem)); }
+            to { transform: translateX(0); }
+        }
+
+        /* CSS UNTUK FAKE NOTIFICATION TOAST */
+        .fake-toast {
+            position: fixed;
+            bottom: 20px;
+            left: -400px;
+            z-index: 100;
+            transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            opacity: 0;
+            will-change: left, opacity;
+        }
+        .fake-toast.show {
+            left: 20px;
+            opacity: 1;
+        }
+        @media (max-width: 640px) {
+            .fake-toast {
+                bottom: 10px;
+                left: -100%;
+                width: calc(100% - 20px);
+            }
+            .fake-toast.show { left: 10px; }
+        }
     </style>
 </head>
 <body class="relative w-full">
@@ -93,17 +172,17 @@
                     <span class="font-extrabold text-xl tracking-tight text-white">CloudNext</span>
                 </div>
 
-                <nav class="hidden md:flex space-x-8" aria-label="Main Navigation">
+                <nav class="hidden md:flex space-x-8" aria-label="Menu Navigasi Utama">
                     <a href="#fitur" class="text-slate-300 hover:text-sky-400 text-sm font-semibold transition-colors">Fitur</a>
                     <a href="#komparasi" class="text-slate-300 hover:text-sky-400 text-sm font-semibold transition-colors">Komparasi</a>
                     <a href="#klien" class="text-slate-300 hover:text-sky-400 text-sm font-semibold transition-colors">Klien</a>
                 </nav>
 
                 <div class="flex items-center gap-3">
-                    <a href="https://plan.cloudnext.my.id" aria-label="Login Panel CloudNext" class="text-xs sm:text-sm font-bold text-white bg-slate-800 hover:bg-slate-700 px-4 sm:px-5 py-2.5 rounded-xl transition-all border border-slate-700 hidden sm:block">
+                    <a href="https://plan.cloudnext.my.id" class="text-xs sm:text-sm font-bold text-white bg-slate-800 hover:bg-slate-700 px-4 sm:px-5 py-2.5 rounded-xl transition-all border border-slate-700 hidden sm:block">
                         Login Panel
                     </a>
-                    <a href="https://plan.cloudnext.my.id" aria-label="Mulai Free Trial" class="text-xs sm:text-sm font-bold text-white bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-400 hover:to-indigo-500 px-4 sm:px-5 py-2.5 rounded-xl shadow-lg shadow-sky-500/25 transition-all transform hover:-translate-y-0.5">
+                    <a href="https://plan.cloudnext.my.id" class="text-xs sm:text-sm font-bold text-white bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-400 hover:to-indigo-500 px-4 sm:px-5 py-2.5 rounded-xl shadow-lg shadow-sky-500/25 transition-all transform hover:-translate-y-0.5">
                         Mulai Free Trial
                     </a>
                 </div>
@@ -118,13 +197,16 @@
                     <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
                     Infrastruktur Aktif & Siap Digunakan
                 </div>
+
                 <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white tracking-tight mb-6 leading-tight mx-auto max-w-4xl">
                     Infrastruktur Enterprise.<br>
                     <span class="gradient-text">Tanpa Kartu Kredit.</span>
                 </h1>
+
                 <p class="mt-4 max-w-2xl mx-auto text-sm sm:text-lg text-slate-400 leading-relaxed mb-10 px-2">
                     Dirancang khusus untuk Developer Indonesia. Deploy VPS DigitalOcean sesungguhnya dalam 60 detik. Pembayaran Rupiah, 100% Root Access, dan Dashboard yang sangat simpel.
                 </p>
+
                 <div class="flex flex-col sm:flex-row justify-center gap-4 w-full px-4 sm:px-0">
                     <a href="https://plan.cloudnext.my.id" class="inline-flex justify-center items-center gap-2 bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-400 hover:to-indigo-500 text-white font-bold text-sm sm:text-base px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl sm:rounded-2xl shadow-xl shadow-sky-500/20 transition-all transform hover:-translate-y-1 w-full sm:w-auto">
                         <i class="fas fa-rocket" aria-hidden="true"></i> Klaim Free Trial Sekarang
@@ -133,11 +215,380 @@
                         <i class="fas fa-balance-scale" aria-hidden="true"></i> Lihat Perbandingan
                     </a>
                 </div>
+
                 <p class="mt-6 text-[10px] sm:text-xs text-slate-500 font-medium"><i class="fas fa-shield-alt text-emerald-500 mr-1" aria-hidden="true"></i> Terintegrasi langsung dengan API DigitalOcean Asli</p>
             </div>
         </section>
 
-        </main>
+        <section class="py-10 px-4 relative z-10 w-full">
+            <div class="max-w-5xl mx-auto">
+                <div class="relative rounded-3xl overflow-hidden bg-gradient-to-r from-indigo-900 to-slate-900 border border-indigo-500/30 p-6 sm:p-10 flex flex-col md:flex-row items-center justify-between shadow-2xl">
+                    <div class="absolute top-0 right-0 -mt-10 -mr-10 w-32 sm:w-40 h-32 sm:h-40 bg-sky-500/20 rounded-full blur-3xl pointer-events-none"></div>
+                    <div class="absolute bottom-0 left-0 -mb-10 -ml-10 w-32 sm:w-40 h-32 sm:h-40 bg-indigo-500/20 rounded-full blur-3xl pointer-events-none"></div>
+
+                    <div class="relative z-10 text-center md:text-left mb-6 md:mb-0 w-full">
+                        <h2 class="text-xl sm:text-3xl font-extrabold text-white mb-2">Buktikan Sendiri Performanya!</h2>
+                        <p class="text-indigo-200 text-xs sm:text-base">Dapatkan <span class="font-bold text-sky-400 bg-sky-500/10 px-2 py-0.5 rounded">1x24 Jam Akses Penuh</span> ke VPS DigitalOcean secara cuma-cuma.</p>
+                    </div>
+
+                    <div class="relative z-10 w-full md:w-auto shrink-0">
+                        <a href="https://plan.cloudnext.my.id" class="block text-center w-full bg-white text-indigo-900 hover:bg-sky-50 font-black text-sm sm:text-base px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl shadow-lg transition-all transform hover:scale-105">
+                            Mulai Trial Gratis <i class="fas fa-arrow-right ml-1" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="fitur" class="py-16 sm:py-20 px-4 relative z-10 w-full">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-12 sm:mb-16">
+                    <h2 class="text-2xl sm:text-3xl font-bold text-white mb-3 sm:mb-4">Mendeploy Server Tidak Pernah Semudah Ini</h2>
+                    <p class="text-slate-400 max-w-2xl mx-auto text-xs sm:text-base">Lupakan verifikasi yang rumit dan dashboard VPS yang membingungkan. Kami merombak ulang pengalaman pengguna dari nol.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6">
+                    <div class="glass-panel p-6 sm:p-8 rounded-3xl hover:bg-slate-800/50 transition-all border border-slate-800 hover:border-sky-500/30 group">
+                        <div class="w-12 h-12 sm:w-14 sm:h-14 bg-sky-500/10 border border-sky-500/20 rounded-xl sm:rounded-2xl flex items-center justify-center text-xl sm:text-2xl text-sky-400 mb-5 sm:mb-6 group-hover:scale-110 transition-transform mx-auto md:mx-0">
+                            <i class="fas fa-credit-card relative" aria-hidden="true"><i class="fas fa-slash absolute text-red-500 text-2xl sm:text-3xl opacity-80" style="top: -2px; left: -2px;"></i></i>
+                        </div>
+                        <h3 class="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3 text-center md:text-left">Tanpa Kartu Kredit</h3>
+                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed text-center md:text-left">Halangan terbesar developer Indonesia telah kami hapus. Isi saldo via Admin menggunakan QRIS/E-Wallet lokal, dan langsung deploy.</p>
+                    </div>
+
+                    <div class="glass-panel p-6 sm:p-8 rounded-3xl hover:bg-slate-800/50 transition-all border border-slate-800 hover:border-indigo-500/30 group">
+                        <div class="w-12 h-12 sm:w-14 sm:h-14 bg-indigo-500/10 border border-indigo-500/20 rounded-xl sm:rounded-2xl flex items-center justify-center text-xl sm:text-2xl text-indigo-400 mb-5 sm:mb-6 group-hover:scale-110 transition-transform mx-auto md:mx-0">
+                            <i class="fas fa-terminal" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3 text-center md:text-left">100% Root Access</h3>
+                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed text-center md:text-left">Ini bukan Shared Hosting. Anda mendapatkan sebuah IP Publik Dedicated dan hak akses ROOT penuh via SSH. Bebas install apapun.</p>
+                    </div>
+
+                    <div class="glass-panel p-6 sm:p-8 rounded-3xl hover:bg-slate-800/50 transition-all border border-slate-800 hover:border-emerald-500/30 group">
+                        <div class="w-12 h-12 sm:w-14 sm:h-14 bg-emerald-500/10 border border-emerald-500/20 rounded-xl sm:rounded-2xl flex items-center justify-center text-xl sm:text-2xl text-emerald-400 mb-5 sm:mb-6 group-hover:scale-110 transition-transform mx-auto md:mx-0">
+                            <i class="fas fa-tools" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3 text-center md:text-left">Rebuild OS Instan</h3>
+                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed text-center md:text-left">Salah konfigurasi? Jangan panik. Fitur Rebuild memungkinkan Anda menghapus dan menginstall ulang OS hanya dengan 1 klik.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="komparasi" class="py-16 sm:py-20 px-4 relative z-10 w-full">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-12 sm:mb-16">
+                    <h2 class="text-2xl sm:text-3xl font-bold text-white mb-3 sm:mb-4">Mengapa Memilih CloudNext?</h2>
+                    <p class="text-slate-400 max-w-2xl mx-auto text-xs sm:text-base">Perbandingan nyata antara platform kami melawan metode tradisional dan kompetitor lain.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
+                    <div class="bg-slate-900/80 border border-slate-800 p-6 sm:p-8 rounded-3xl shadow-lg h-full">
+                        <h3 class="text-base sm:text-lg font-bold text-slate-300 mb-5 sm:mb-6 text-center border-b border-slate-800 pb-4">Penyedia Lokal Lain</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3"><i class="fas fa-times-circle text-red-500 mt-1 shrink-0" aria-hidden="true"></i> <span class="text-xs sm:text-sm text-slate-400">Harga sangat mahal (Overpriced) untuk spesifikasi kecil.</span></li>
+                            <li class="flex items-start gap-3"><i class="fas fa-times-circle text-red-500 mt-1 shrink-0" aria-hidden="true"></i> <span class="text-xs sm:text-sm text-slate-400">Hardware jadul (HDD lama) & latensi jaringan lambat.</span></li>
+                            <li class="flex items-start gap-3"><i class="fas fa-times-circle text-red-500 mt-1 shrink-0" aria-hidden="true"></i> <span class="text-xs sm:text-sm text-slate-400">Setup lambat, kadang butuh manual approval staff.</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-gradient-to-b from-slate-800 to-slate-900 border-2 border-sky-500 p-6 sm:p-8 rounded-3xl relative transform lg:-translate-y-4 shadow-[0_0_40px_rgba(56,189,248,0.15)] z-10 h-full mt-4 lg:mt-0">
+                        <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -mt-3 sm:-mt-4 bg-sky-500 text-white text-[9px] sm:text-[10px] font-black tracking-widest px-3 sm:px-4 py-1 rounded-full uppercase whitespace-nowrap">PILIHAN TERBAIK</div>
+                        <div class="text-center border-b border-slate-700/50 pb-4 mb-5 sm:mb-6">
+                            <h3 class="text-xl sm:text-2xl font-bold text-white mb-1">CloudNext</h3>
+                            <p class="text-[10px] sm:text-xs font-bold text-sky-400">Powered by DigitalOcean</p>
+                        </div>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3"><i class="fas fa-check-circle text-emerald-400 mt-0.5 sm:mt-1 text-base sm:text-lg shrink-0" aria-hidden="true"></i> <span class="text-xs sm:text-sm font-semibold text-white">Sangat Murah. Infrastruktur DO, harga terjangkau.</span></li>
+                            <li class="flex items-start gap-3"><i class="fas fa-check-circle text-emerald-400 mt-0.5 sm:mt-1 text-base sm:text-lg shrink-0" aria-hidden="true"></i> <span class="text-xs sm:text-sm font-semibold text-white">Login super praktis via OTP Telegram, anti-hack.</span></li>
+                            <li class="flex items-start gap-3"><i class="fas fa-check-circle text-emerald-400 mt-0.5 sm:mt-1 text-base sm:text-lg shrink-0" aria-hidden="true"></i> <span class="text-xs sm:text-sm font-semibold text-white">Pembayaran via Admin lokal. Tanpa Kartu Kredit.</span></li>
+                            <li class="flex items-start gap-3"><i class="fas fa-check-circle text-emerald-400 mt-0.5 sm:mt-1 text-base sm:text-lg shrink-0" aria-hidden="true"></i> <span class="text-xs sm:text-sm font-semibold text-white">Panel UI elegan, fokus pada VPS tanpa menu rumit.</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-slate-900/80 border border-slate-800 p-6 sm:p-8 rounded-3xl shadow-lg h-full mt-4 lg:mt-0">
+                        <h3 class="text-base sm:text-lg font-bold text-slate-300 mb-5 sm:mb-6 text-center border-b border-slate-800 pb-4">DigitalOcean (Asli)</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3"><i class="fas fa-times-circle text-red-500 mt-1 shrink-0" aria-hidden="true"></i> <span class="text-xs sm:text-sm text-slate-400"><strong>WAJIB</strong> menggunakan Kartu Kredit internasional.</span></li>
+                            <li class="flex items-start gap-3"><i class="fas fa-times-circle text-red-500 mt-1 shrink-0" aria-hidden="true"></i> <span class="text-xs sm:text-sm text-slate-400">Tagihan kurs Dollar ($), terkena fluktuasi bank.</span></li>
+                            <li class="flex items-start gap-3"><i class="fas fa-times-circle text-red-500 mt-1 shrink-0" aria-hidden="true"></i> <span class="text-xs sm:text-sm text-slate-400">Dashboard sangat kompleks dan rumit bagi pemula.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="use-case" class="py-16 sm:py-20 px-4 border-t border-slate-800/50 bg-slate-950/50 relative w-full">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-10 sm:mb-16">
+                    <h2 class="text-2xl sm:text-3xl font-bold text-white mb-3 sm:mb-4">Satu VPS, Ribuan Kemungkinan</h2>
+                    <p class="text-slate-400 max-w-2xl mx-auto text-xs sm:text-base">Bangun mahakarya kode Anda selanjutnya menggunakan infrastruktur NVMe SSD kami.</p>
+                </div>
+
+                <div class="flex flex-wrap justify-center gap-3 sm:gap-4 max-w-4xl mx-auto">
+                    <div class="flex items-center gap-2 sm:gap-3 bg-slate-900 border border-slate-800 px-4 sm:px-6 py-2.5 sm:py-3 rounded-xl sm:rounded-2xl shadow-lg">
+                        <i class="fab fa-node-js text-green-500 text-xl sm:text-2xl" aria-hidden="true"></i> <span class="font-bold text-xs sm:text-sm text-slate-200">Node.js Apps</span>
+                    </div>
+                    <div class="flex items-center gap-2 sm:gap-3 bg-slate-900 border border-slate-800 px-4 sm:px-6 py-2.5 sm:py-3 rounded-xl sm:rounded-2xl shadow-lg">
+                        <i class="fab fa-python text-yellow-500 text-xl sm:text-2xl" aria-hidden="true"></i> <span class="font-bold text-xs sm:text-sm text-slate-200">Python Bots</span>
+                    </div>
+                    <div class="flex items-center gap-2 sm:gap-3 bg-slate-900 border border-slate-800 px-4 sm:px-6 py-2.5 sm:py-3 rounded-xl sm:rounded-2xl shadow-lg">
+                        <i class="fab fa-docker text-blue-500 text-xl sm:text-2xl" aria-hidden="true"></i> <span class="font-bold text-xs sm:text-sm text-slate-200">Docker</span>
+                    </div>
+                    <div class="flex items-center gap-2 sm:gap-3 bg-slate-900 border border-slate-800 px-4 sm:px-6 py-2.5 sm:py-3 rounded-xl sm:rounded-2xl shadow-lg">
+                        <i class="fas fa-gamepad text-purple-500 text-xl sm:text-2xl" aria-hidden="true"></i> <span class="font-bold text-xs sm:text-sm text-slate-200">Game Servers</span>
+                    </div>
+                    <div class="flex items-center gap-2 sm:gap-3 bg-slate-900 border border-slate-800 px-4 sm:px-6 py-2.5 sm:py-3 rounded-xl sm:rounded-2xl shadow-lg">
+                        <i class="fas fa-network-wired text-sky-500 text-xl sm:text-2xl" aria-hidden="true"></i> <span class="font-bold text-xs sm:text-sm text-slate-200">VPN / Tunnel</span>
+                    </div>
+                    <div class="flex items-center gap-2 sm:gap-3 bg-slate-900 border border-slate-800 px-4 sm:px-6 py-2.5 sm:py-3 rounded-xl sm:rounded-2xl shadow-lg">
+                        <i class="fab fa-php text-indigo-400 text-xl sm:text-2xl" aria-hidden="true"></i> <span class="font-bold text-xs sm:text-sm text-slate-200">Web Hosting</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="klien" class="py-16 sm:py-20 px-4 relative z-10 w-full">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-10 sm:mb-12">
+                    <h2 class="text-2xl sm:text-3xl font-bold text-white mb-3 sm:mb-4">Bot Yang Menggunakan Layanan Kami</h2>
+                    <p class="text-slate-400 max-w-2xl mx-auto text-xs sm:text-base">Infrastruktur kami dipercaya untuk menjalankan berbagai bot populer dengan uptime 99.9% tanpa lag.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+                    <a href="https://t.me/pteromusic_bot" target="_blank" class="glass-panel p-5 rounded-2xl border-2 border-sky-500/50 hover:border-sky-400 bg-sky-900/20 transition-all transform hover:-translate-y-1 flex items-center gap-4 group relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-r from-sky-500/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
+                        <div class="w-12 h-12 rounded-full bg-gradient-to-br from-sky-400 to-indigo-500 flex items-center justify-center shrink-0">
+                            <i class="fas fa-music text-white text-xl" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-white font-bold text-sm sm:text-base flex items-center gap-1">@pteromusic_bot <i class="fas fa-check-circle text-sky-400 text-xs" aria-hidden="true"></i></h4>
+                            <p class="text-sky-200 text-xs mt-0.5">High-Quality Music Bot</p>
+                        </div>
+                    </a>
+
+                    <div class="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-slate-600 transition-all flex items-center gap-4 cursor-default opacity-80 hover:opacity-100">
+                        <div class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center shrink-0 text-slate-400">
+                            <i class="fas fa-robot text-xl" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-slate-200 font-bold text-sm sm:text-base">@AutoPostPro_bot</h4>
+                            <p class="text-slate-500 text-xs mt-0.5">Channel Auto Poster</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-slate-600 transition-all flex items-center gap-4 cursor-default opacity-80 hover:opacity-100">
+                        <div class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center shrink-0 text-slate-400">
+                            <i class="fas fa-chart-line text-xl" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-slate-200 font-bold text-sm sm:text-base">@CryptoTracker_bot</h4>
+                            <p class="text-slate-500 text-xs mt-0.5">Live Price & Alerts</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-slate-600 transition-all flex items-center gap-4 cursor-default opacity-80 hover:opacity-100">
+                        <div class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center shrink-0 text-slate-400">
+                            <i class="fas fa-store text-xl" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-slate-200 font-bold text-sm sm:text-base">@ShopAdmin_bot</h4>
+                            <p class="text-slate-500 text-xs mt-0.5">Auto Store Manager</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-slate-900/30 border-y border-slate-800/50 w-full overflow-hidden relative z-10">
+            <div class="max-w-7xl mx-auto px-4 text-center mb-8">
+                <h2 class="text-2xl sm:text-3xl font-bold text-white mb-2">Apa Kata Pengguna?</h2>
+                <div class="flex items-center justify-center gap-2 mb-2">
+                    <span class="text-3xl font-black text-white">4.8</span>
+                    <div class="flex text-yellow-400 text-sm" aria-label="Rating 4.8 dari 5 Bintang">
+                        <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star-half-alt" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <p class="text-slate-400 text-xs sm:text-sm">Berdasarkan 500+ deploy server bulan ini.</p>
+            </div>
+
+            <div class="marquee-container w-full">
+                <div class="marquee-content">
+                    <div class="glass-panel p-5 rounded-2xl border border-slate-800 w-72 sm:w-80 shrink-0">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="w-8 h-8 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold text-xs">RD</div>
+                            <div>
+                                <p class="text-white text-sm font-bold">Rangga D.</p>
+                                <div class="flex text-yellow-400 text-[10px]"><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i></div>
+                            </div>
+                        </div>
+                        <p class="text-slate-300 text-xs leading-relaxed">"Gila cepet banget setupnya, DO asli no debat! Login gausah ribet pake kartu kredit segala."</p>
+                    </div>
+                    <div class="glass-panel p-5 rounded-2xl border border-slate-800 w-72 sm:w-80 shrink-0">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="w-8 h-8 rounded-full bg-sky-500/20 text-sky-400 flex items-center justify-center font-bold text-xs">AF</div>
+                            <div>
+                                <p class="text-white text-sm font-bold">Ahmad F.</p>
+                                <div class="flex text-yellow-400 text-[10px]"><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i></div>
+                            </div>
+                        </div>
+                        <p class="text-slate-300 text-xs leading-relaxed">"Mantap, spesifikasi real. Cuma kadang kalo buka panel via HP agak lambat loading dikit, tapi servernya mah jos."</p>
+                    </div>
+                    <div class="glass-panel p-5 rounded-2xl border border-slate-800 w-72 sm:w-80 shrink-0">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="w-8 h-8 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-xs">SN</div>
+                            <div>
+                                <p class="text-white text-sm font-bold">Sandi N.</p>
+                                <div class="flex text-yellow-400 text-[10px]"><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i></div>
+                            </div>
+                        </div>
+                        <p class="text-slate-300 text-xs leading-relaxed">"Adminnya responsif banget. Topup saldo via QRIS masuk detik itu juga. Langsung buat nge-host bot telegram."</p>
+                    </div>
+                    <div class="glass-panel p-5 rounded-2xl border border-slate-800 w-72 sm:w-80 shrink-0">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="w-8 h-8 rounded-full bg-slate-600/20 text-slate-400 flex items-center justify-center font-bold text-xs">BD</div>
+                            <div>
+                                <p class="text-white text-sm font-bold">Budi Darma</p>
+                                <div class="flex text-yellow-400 text-[10px]"><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i></div>
+                            </div>
+                        </div>
+                        <p class="text-slate-300 text-xs leading-relaxed">"Oke lah buat harga segini dapet DO. Tapi tolong dong pilihan OS nya ditambahin, masa cuma Ubuntu sama Debian doang."</p>
+                    </div>
+                </div>
+                
+                <div class="marquee-content" aria-hidden="true">
+                    <div class="glass-panel p-5 rounded-2xl border border-slate-800 w-72 sm:w-80 shrink-0">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="w-8 h-8 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold text-xs">RD</div>
+                            <div>
+                                <p class="text-white text-sm font-bold">Rangga D.</p>
+                                <div class="flex text-yellow-400 text-[10px]"><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i></div>
+                            </div>
+                        </div>
+                        <p class="text-slate-300 text-xs leading-relaxed">"Gila cepet banget setupnya, DO asli no debat! Login gausah ribet pake kartu kredit segala."</p>
+                    </div>
+                    <div class="glass-panel p-5 rounded-2xl border border-slate-800 w-72 sm:w-80 shrink-0">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="w-8 h-8 rounded-full bg-sky-500/20 text-sky-400 flex items-center justify-center font-bold text-xs">AF</div>
+                            <div>
+                                <p class="text-white text-sm font-bold">Ahmad F.</p>
+                                <div class="flex text-yellow-400 text-[10px]"><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i></div>
+                            </div>
+                        </div>
+                        <p class="text-slate-300 text-xs leading-relaxed">"Mantap, spesifikasi real. Cuma kadang kalo buka panel via HP agak lambat loading dikit, tapi servernya mah jos."</p>
+                    </div>
+                    <div class="glass-panel p-5 rounded-2xl border border-slate-800 w-72 sm:w-80 shrink-0">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="w-8 h-8 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-xs">SN</div>
+                            <div>
+                                <p class="text-white text-sm font-bold">Sandi N.</p>
+                                <div class="flex text-yellow-400 text-[10px]"><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i></div>
+                            </div>
+                        </div>
+                        <p class="text-slate-300 text-xs leading-relaxed">"Adminnya responsif banget. Topup saldo via QRIS masuk detik itu juga. Langsung buat nge-host bot telegram."</p>
+                    </div>
+                    <div class="glass-panel p-5 rounded-2xl border border-slate-800 w-72 sm:w-80 shrink-0">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="w-8 h-8 rounded-full bg-slate-600/20 text-slate-400 flex items-center justify-center font-bold text-xs">BD</div>
+                            <div>
+                                <p class="text-white text-sm font-bold">Budi Darma</p>
+                                <div class="flex text-yellow-400 text-[10px]"><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i></div>
+                            </div>
+                        </div>
+                        <p class="text-slate-300 text-xs leading-relaxed">"Oke lah buat harga segini dapet DO. Tapi tolong dong pilihan OS nya ditambahin, masa cuma Ubuntu sama Debian doang."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="marquee-container w-full mt-2">
+                <div class="marquee-content reverse">
+                    <div class="glass-panel p-5 rounded-2xl border border-slate-800 w-72 sm:w-80 shrink-0">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="w-8 h-8 rounded-full bg-pink-500/20 text-pink-400 flex items-center justify-center font-bold text-xs">LK</div>
+                            <div>
+                                <p class="text-white text-sm font-bold">Lina K.</p>
+                                <div class="flex text-yellow-400 text-[10px]"><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i></div>
+                            </div>
+                        </div>
+                        <p class="text-slate-300 text-xs leading-relaxed">"Akhirnya nemu VPS DO yang bisa bayar pake e-wallet. Sangat membantu buat anak kosan kayak saya wkwk."</p>
+                    </div>
+                    <div class="glass-panel p-5 rounded-2xl border border-slate-800 w-72 sm:w-80 shrink-0">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="w-8 h-8 rounded-full bg-blue-500/20 text-blue-400 flex items-center justify-center font-bold text-xs">TZ</div>
+                            <div>
+                                <p class="text-white text-sm font-bold">Taufik Z.</p>
+                                <div class="flex text-yellow-400 text-[10px]"><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i></div>
+                            </div>
+                        </div>
+                        <p class="text-slate-300 text-xs leading-relaxed">"Uptime dewa. Web ujian sekolah saya hosting di sini aman banget meski diakses ratusan murid barengan."</p>
+                    </div>
+                    <div class="glass-panel p-5 rounded-2xl border border-slate-800 w-72 sm:w-80 shrink-0">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="w-8 h-8 rounded-full bg-orange-500/20 text-orange-400 flex items-center justify-center font-bold text-xs">ER</div>
+                            <div>
+                                <p class="text-white text-sm font-bold">Ery R.</p>
+                                <div class="flex text-yellow-400 text-[10px]"><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i></div>
+                            </div>
+                        </div>
+                        <p class="text-slate-300 text-xs leading-relaxed">"Bagus layanannya. Saran aja, fitur ganti password root langsung dari panel diadain dong biar ga ribet via ssh."</p>
+                    </div>
+                     <div class="glass-panel p-5 rounded-2xl border border-slate-800 w-72 sm:w-80 shrink-0">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="w-8 h-8 rounded-full bg-teal-500/20 text-teal-400 flex items-center justify-center font-bold text-xs">HN</div>
+                            <div>
+                                <p class="text-white text-sm font-bold">Hendra N.</p>
+                                <div class="flex text-yellow-400 text-[10px]"><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i></div>
+                            </div>
+                        </div>
+                        <p class="text-slate-300 text-xs leading-relaxed">"Ga nyangka bisa se-simpel ini. Klik deploy, nunggu 1 menit, IP rilis. Langsung gas install panel web. GG!"</p>
+                    </div>
+                </div>
+
+                <div class="marquee-content reverse" aria-hidden="true">
+                    <div class="glass-panel p-5 rounded-2xl border border-slate-800 w-72 sm:w-80 shrink-0">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="w-8 h-8 rounded-full bg-pink-500/20 text-pink-400 flex items-center justify-center font-bold text-xs">LK</div>
+                            <div>
+                                <p class="text-white text-sm font-bold">Lina K.</p>
+                                <div class="flex text-yellow-400 text-[10px]"><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i></div>
+                            </div>
+                        </div>
+                        <p class="text-slate-300 text-xs leading-relaxed">"Akhirnya nemu VPS DO yang bisa bayar pake e-wallet. Sangat membantu buat anak kosan kayak saya wkwk."</p>
+                    </div>
+                    <div class="glass-panel p-5 rounded-2xl border border-slate-800 w-72 sm:w-80 shrink-0">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="w-8 h-8 rounded-full bg-blue-500/20 text-blue-400 flex items-center justify-center font-bold text-xs">TZ</div>
+                            <div>
+                                <p class="text-white text-sm font-bold">Taufik Z.</p>
+                                <div class="flex text-yellow-400 text-[10px]"><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i></div>
+                            </div>
+                        </div>
+                        <p class="text-slate-300 text-xs leading-relaxed">"Uptime dewa. Web ujian sekolah saya hosting di sini aman banget meski diakses ratusan murid barengan."</p>
+                    </div>
+                    <div class="glass-panel p-5 rounded-2xl border border-slate-800 w-72 sm:w-80 shrink-0">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="w-8 h-8 rounded-full bg-orange-500/20 text-orange-400 flex items-center justify-center font-bold text-xs">ER</div>
+                            <div>
+                                <p class="text-white text-sm font-bold">Ery R.</p>
+                                <div class="flex text-yellow-400 text-[10px]"><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i></div>
+                            </div>
+                        </div>
+                        <p class="text-slate-300 text-xs leading-relaxed">"Bagus layanannya. Saran aja, fitur ganti password root langsung dari panel diadain dong biar ga ribet via ssh."</p>
+                    </div>
+                     <div class="glass-panel p-5 rounded-2xl border border-slate-800 w-72 sm:w-80 shrink-0">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="w-8 h-8 rounded-full bg-teal-500/20 text-teal-400 flex items-center justify-center font-bold text-xs">HN</div>
+                            <div>
+                                <p class="text-white text-sm font-bold">Hendra N.</p>
+                                <div class="flex text-yellow-400 text-[10px]"><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i></div>
+                            </div>
+                        </div>
+                        <p class="text-slate-300 text-xs leading-relaxed">"Ga nyangka bisa se-simpel ini. Klik deploy, nunggu 1 menit, IP rilis. Langsung gas install panel web. GG!"</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer class="border-t border-slate-800/80 bg-slate-950 pt-12 pb-8 px-4 w-full relative z-10">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
@@ -145,9 +596,11 @@
                 <i class="fas fa-cloud text-sky-500 text-xl sm:text-2xl" aria-hidden="true"></i>
                 <span class="font-extrabold text-lg sm:text-xl text-white">CloudNext</span>
             </div>
+
             <p class="text-slate-500 text-[10px] sm:text-sm text-center md:text-left order-3 md:order-none">
                 &copy; 2024 CloudNext ID. Infrastruktur didukung oleh DigitalOcean API.
             </p>
+
             <div class="flex gap-4 order-2 md:order-none">
                 <a href="https://plan.cloudnext.my.id" class="text-xs sm:text-sm text-slate-400 hover:text-white transition-colors font-semibold">Login User</a>
                 <span class="text-slate-700">•</span>
