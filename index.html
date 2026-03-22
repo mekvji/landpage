@@ -105,7 +105,7 @@
         </div>
     </div>
 
-    <!-- Navigasi Diperbarui: Menambahkan Tombol Free Trial -->
+    <!-- Navigasi dengan Tombol Free Trial -->
     <nav class="fixed top-0 w-full z-50 mix-blend-difference px-6 py-6 flex justify-between items-center opacity-0 nav-item">
         <div class="text-xl font-medium tracking-tight">CloudNext</div>
         <div class="flex items-center gap-6">
@@ -118,7 +118,7 @@
         </div>
     </nav>
 
-    <!-- Section 1: Hero (Diperbarui dengan penonjolan Free Trial VPS) -->
+    <!-- Section 1: Hero -->
     <section class="h-screen flex flex-col items-center justify-center relative px-4">
         <div class="text-center overflow-hidden">
             <h1 class="text-7xl md:text-[12vw] font-medium tracking-tightest leading-none hero-title translate-y-full opacity-0">
@@ -131,7 +131,7 @@
             </p>
         </div>
         
-        <!-- Call to Action Baru untuk Free Trial -->
+        <!-- Call to Action Free Trial -->
         <div class="mt-10 overflow-hidden text-center opacity-0 hero-cta translate-y-full">
             <a href="https://plan.cloudnext.my.id" class="btn-elegant px-8 py-4 gap-3">
                 <span class="text-base font-semibold tracking-wide">Mulai Free Trial VPS</span>
@@ -175,7 +175,7 @@
     </section>
 
     <!-- Section 4: Fitur Minimalis -->
-    <section class="py-40 bg-white text-black px-6 rounded-t-[3rem] -mt-10 relative z-20">
+    <section class="pt-40 pb-20 bg-white text-black px-6 rounded-t-[3rem] -mt-10 relative z-20">
         <div class="max-w-7xl mx-auto">
             <div class="flex flex-col md:flex-row justify-between items-end mb-24 border-b border-gray-300 pb-10">
                 <h2 class="text-5xl md:text-7xl font-medium tracking-tight leading-none feature-header">
@@ -214,7 +214,47 @@
         </div>
     </section>
 
-    <!-- Section 5: Footer Diperbarui -->
+    <!-- Section 5: Informasi Detail (BARU) -->
+    <section class="py-32 bg-white text-black px-6 border-t border-gray-200 relative z-20">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-16">
+            <!-- Sisi Kiri: Sticky Title -->
+            <div class="md:w-1/3">
+                <h2 class="text-4xl md:text-5xl font-medium tracking-tight sticky top-32 about-header">
+                    Apa itu CloudNext?
+                </h2>
+            </div>
+            
+            <!-- Sisi Kanan: Detail Deskripsi -->
+            <div class="md:w-2/3 space-y-16">
+                <div class="about-item">
+                    <h3 class="text-2xl font-medium mb-4">Infrastruktur Masa Depan, Hari Ini.</h3>
+                    <p class="text-gray-600 text-lg leading-relaxed">
+                        CloudNext bukan sekadar penyedia Virtual Private Server (VPS) biasa. Kami adalah ekosistem komputasi awan generasi baru yang dirancang secara khusus untuk memecahkan masalah latensi dan skalabilitas di Indonesia. Dibangun di atas arsitektur <i>bare-metal</i> terbaru dengan penyimpanan NVMe murni dan prosesor *high-end*, kami memastikan aplikasi dan website Anda berjalan pada performa puncaknya tanpa *bottleneck*.
+                    </p>
+                </div>
+                
+                <div class="about-item">
+                    <h3 class="text-2xl font-medium mb-4">Diciptakan untuk Developer & Enterprise.</h3>
+                    <p class="text-gray-600 text-lg leading-relaxed">
+                        Mulai dari *startup* yang baru merintis hingga perusahaan skala besar, CloudNext menyediakan lingkungan yang sepenuhnya terisolasi dan aman. Anda mendapatkan kontrol penuh (*root access*), panel manajemen yang intuitif, serta kebebasan mutlak untuk mengonfigurasi *server* sesuai kebutuhan sistem Anda. Kami menghilangkan batasan agar Anda bisa fokus pada inovasi.
+                    </p>
+                </div>
+                
+                <div class="about-item">
+                    <h3 class="text-2xl font-medium mb-4">Komunitas & Keandalan 99.9%.</h3>
+                    <p class="text-gray-600 text-lg leading-relaxed mb-6">
+                        Dengan jaringan redundan berlapis dan pusat data tier tertinggi, kami menjamin *uptime* jaringan 99.9%. Selain itu, Anda tidak pernah sendirian. Tim teknis kami dan ratusan developer lainnya aktif berdiskusi, berbagi wawasan, dan saling membantu dalam komunitas eksklusif kami.
+                    </p>
+                    <a href="https://t.me/cloudnextch" target="_blank" class="inline-flex items-center gap-2 text-black font-medium border-b-2 border-black pb-1 hover:text-gray-500 hover:border-gray-500 transition-colors">
+                        Bergabung dengan Komunitas Kami
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Footer Diperbarui -->
     <section class="h-screen bg-black text-white flex flex-col justify-between px-6 py-12 relative z-10">
         <div class="flex-1 flex items-center justify-center flex-col">
             <h1 class="text-[15vw] font-medium tracking-tighter leading-none text-center footer-title">
@@ -224,7 +264,6 @@
         <div class="flex flex-col md:flex-row justify-between items-center text-sm text-[var(--text-muted)] border-t border-gray-900 pt-8">
             <p>&copy; 2026 CloudNext. Masa depan ada di sini.</p>
             
-            <!-- Tautan Komunitas Ditambahkan di Sini -->
             <div class="flex gap-6 mt-4 md:mt-0">
                 <a href="#" class="hover:text-white transition-colors">Privasi</a>
                 <a href="#" class="hover:text-white transition-colors">Ketentuan</a>
@@ -283,17 +322,14 @@
         const statementText = document.getElementById('statement-text');
         wrapWords(statementText);
 
-        // 3. MASTER TIMELINE (Animasi Load Masuk)
+        // 3. MASTER TIMELINE (Animasi Load Masuk - DIPERTAHANKAN)
         const tl = gsap.timeline();
 
-        // Loading Screen Out - DIPERTAHANKAN SEPENUHNYA
         tl.to('.loader-text', { y: '0%', duration: 1, ease: 'power4.out', delay: 0.2 })
           .to('.loader-text', { y: '-100%', duration: 0.8, ease: 'power4.in', delay: 0.5 })
           .to('#loader', { y: '-100%', duration: 0.8, ease: 'power4.inOut' }, "-=0.4")
-          // Elemen Hero Masuk
           .to('.hero-title', { y: '0%', opacity: 1, duration: 1.2, ease: 'power4.out' }, "-=0.2")
           .to('.hero-subtitle', { y: '0%', opacity: 1, duration: 1, ease: 'power4.out' }, "-=0.9")
-          // Animasi Tombol CTA Baru
           .to('.hero-cta', { y: '0%', opacity: 1, duration: 1, ease: 'power4.out' }, "-=0.8")
           .to('.nav-item, .hero-scroll', { opacity: 1, duration: 1, ease: 'power2.out' }, "-=0.5");
 
@@ -341,7 +377,7 @@
             ease: "power2.out"
         }, 0.5);
 
-        // C. Transisi Area Putih
+        // C. Transisi Area Putih (Fitur)
         gsap.from(".feature-header", {
             scrollTrigger: {
                 trigger: ".feature-header",
@@ -366,7 +402,31 @@
             ease: "power3.out"
         });
 
-        // D. Efek Parallax Teks Footer
+        // D. Transisi Area Informasi Detail (BARU)
+        gsap.from(".about-header", {
+            scrollTrigger: {
+                trigger: ".about-header",
+                start: "top 85%",
+            },
+            opacity: 0,
+            x: -30,
+            duration: 1,
+            ease: "power3.out"
+        });
+
+        gsap.from(".about-item", {
+            scrollTrigger: {
+                trigger: ".about-header", // Terpicu bersamaan dengan header
+                start: "top 80%",
+            },
+            y: 40,
+            opacity: 0,
+            duration: 1,
+            stagger: 0.2,
+            ease: "power3.out"
+        });
+
+        // E. Efek Parallax Teks Footer
         gsap.from(".footer-title", {
             scrollTrigger: {
                 trigger: ".footer-title",
