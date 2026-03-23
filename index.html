@@ -84,7 +84,7 @@
             transform: scale(1.02);
         }
 
-        /* Preloader - Tidak Diubah */
+        /* Preloader - Tidak Diubah sama sekali */
         #loader {
             position: fixed;
             inset: 0;
@@ -93,6 +93,11 @@
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+
+        /* Menghaluskan target anchor secara native sbg cadangan */
+        html {
+            scroll-behavior: smooth;
         }
     </style>
 </head>
@@ -105,7 +110,7 @@
         </div>
     </div>
 
-    <!-- Navigasi dengan Tombol Free Trial -->
+    <!-- Navigasi -->
     <nav class="fixed top-0 w-full z-50 mix-blend-difference px-6 py-6 flex justify-between items-center opacity-0 nav-item">
         <div class="text-xl font-medium tracking-tight">CloudNext</div>
         <div class="flex items-center gap-6">
@@ -131,7 +136,6 @@
             </p>
         </div>
         
-        <!-- Call to Action Free Trial -->
         <div class="mt-10 overflow-hidden text-center opacity-0 hero-cta translate-y-full">
             <a href="https://plan.cloudnext.my.id" class="btn-elegant px-8 py-4 gap-3">
                 <span class="text-base font-semibold tracking-wide">Mulai Free Trial VPS</span>
@@ -139,7 +143,6 @@
             </a>
         </div>
         
-        <!-- Indikator Scroll Halus -->
         <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-0 hero-scroll">
             <span class="text-xs text-[var(--text-muted)] uppercase tracking-widest">Scroll</span>
             <div class="w-[1px] h-12 bg-gray-800 relative overflow-hidden">
@@ -214,17 +217,14 @@
         </div>
     </section>
 
-    <!-- Section 5: Informasi Detail (BARU) -->
-    <section class="py-32 bg-white text-black px-6 border-t border-gray-200 relative z-20">
+    <!-- Section 5: Informasi Detail -->
+    <section class="pt-20 pb-32 bg-white text-black px-6 border-t border-gray-200 relative z-20">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-16">
-            <!-- Sisi Kiri: Sticky Title -->
             <div class="md:w-1/3">
                 <h2 class="text-4xl md:text-5xl font-medium tracking-tight sticky top-32 about-header">
                     Apa itu CloudNext?
                 </h2>
             </div>
-            
-            <!-- Sisi Kanan: Detail Deskripsi -->
             <div class="md:w-2/3 space-y-16">
                 <div class="about-item">
                     <h3 class="text-2xl font-medium mb-4">Infrastruktur Masa Depan, Hari Ini.</h3>
@@ -239,22 +239,41 @@
                         Mulai dari *startup* yang baru merintis hingga perusahaan skala besar, CloudNext menyediakan lingkungan yang sepenuhnya terisolasi dan aman. Anda mendapatkan kontrol penuh (*root access*), panel manajemen yang intuitif, serta kebebasan mutlak untuk mengonfigurasi *server* sesuai kebutuhan sistem Anda. Kami menghilangkan batasan agar Anda bisa fokus pada inovasi.
                     </p>
                 </div>
-                
-                <div class="about-item">
-                    <h3 class="text-2xl font-medium mb-4">Komunitas & Keandalan 99.9%.</h3>
-                    <p class="text-gray-600 text-lg leading-relaxed mb-6">
-                        Dengan jaringan redundan berlapis dan pusat data tier tertinggi, kami menjamin *uptime* jaringan 99.9%. Selain itu, Anda tidak pernah sendirian. Tim teknis kami dan ratusan developer lainnya aktif berdiskusi, berbagi wawasan, dan saling membantu dalam komunitas eksklusif kami.
-                    </p>
-                    <a href="https://t.me/cloudnextch" target="_blank" class="inline-flex items-center gap-2 text-black font-medium border-b-2 border-black pb-1 hover:text-gray-500 hover:border-gray-500 transition-colors">
-                        Bergabung dengan Komunitas Kami
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                    </a>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- Section 6: Footer Diperbarui -->
+    <!-- Section 6: Tab Legal (Privasi) - BARU -->
+    <section id="privasi" class="py-24 bg-[#f5f5f7] text-black px-6 border-t border-gray-200 relative z-20">
+        <div class="max-w-4xl mx-auto legal-item">
+            <h2 class="text-3xl md:text-4xl font-medium tracking-tight mb-8">Kebijakan Privasi</h2>
+            <div class="space-y-6 text-gray-600 leading-relaxed text-lg">
+                <p>
+                    Di CloudNext, privasi Anda adalah hak asasi yang kami junjung tinggi. Kami mendesain infrastruktur kami dengan prinsip <i>privacy-by-design</i>. Data yang Anda simpan di dalam <i>environment</i> VPS kami dienkripsi pada tingkat perangkat keras (hardware-level).
+                </p>
+                <p>
+                    Kami <strong>tidak pernah</strong> mengintip, menganalisis, atau menjual data lalu lintas (traffic) maupun berkas milik Anda kepada pihak ketiga. Informasi pribadi yang kami kumpulkan saat pendaftaran murni hanya digunakan untuk keperluan penagihan dan verifikasi keamanan akun.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 7: Tab Legal (Ketentuan) - BARU -->
+    <section id="ketentuan" class="py-24 bg-white text-black px-6 border-t border-gray-200 relative z-20">
+        <div class="max-w-4xl mx-auto legal-item">
+            <h2 class="text-3xl md:text-4xl font-medium tracking-tight mb-8">Syarat & Ketentuan</h2>
+            <div class="space-y-6 text-gray-600 leading-relaxed text-lg">
+                <p>
+                    Dengan menggunakan layanan CloudNext, Anda mempercayakan sistem komputasi Anda kepada kami. Sebagai gantinya, kami mewajibkan pengguna untuk tidak menggunakan jaringan dan server kami untuk aktivitas yang melanggar hukum, seperti peretasan (hacking), penyebaran *malware*, aktivitas penipuan, atau pelanggaran hak cipta.
+                </p>
+                <p>
+                    Uji coba gratis (Free Trial) VPS tunduk pada ketersediaan sumber daya dan sistem deteksi penipuan kami. CloudNext berhak mencabut akses jika ditemukan penyalahgunaan layanan selama masa trial. Seluruh SLA (Service Level Agreement) 99.9% kami dijamin oleh kompensasi layanan transparan.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 8: Footer Besar -->
     <section class="h-screen bg-black text-white flex flex-col justify-between px-6 py-12 relative z-10">
         <div class="flex-1 flex items-center justify-center flex-col">
             <h1 class="text-[15vw] font-medium tracking-tighter leading-none text-center footer-title">
@@ -265,9 +284,11 @@
             <p>&copy; 2026 CloudNext. Masa depan ada di sini.</p>
             
             <div class="flex gap-6 mt-4 md:mt-0">
-                <a href="#" class="hover:text-white transition-colors">Privasi</a>
-                <a href="#" class="hover:text-white transition-colors">Ketentuan</a>
-                <a href="#" class="hover:text-white transition-colors">Kontak</a>
+                <!-- Anchor links dengan ID khusus -->
+                <a href="#privasi" class="hover:text-white transition-colors scroll-link">Privasi</a>
+                <a href="#ketentuan" class="hover:text-white transition-colors scroll-link">Ketentuan</a>
+                <!-- Link Eksternal -->
+                <a href="https://t.me/trisetor" target="_blank" class="hover:text-white transition-colors">Kontak</a>
                 <a href="https://t.me/cloudnextch" target="_blank" class="hover:text-white transition-colors">Komunitas</a>
             </div>
         </div>
@@ -275,7 +296,6 @@
 
     <!-- Logika Animasi JS -->
     <script>
-        // Animasi CSS Keyframes untuk indikator scroll
         const style = document.createElement('style');
         style.textContent = `
             @keyframes scrollDown {
@@ -288,7 +308,7 @@
 
         // 1. Inisialisasi Lenis (Smooth Scrolling)
         const lenis = new Lenis({
-            duration: 1.2,
+            duration: 1.5, // Dibuat sedikit lebih lambat agar perpindahan tab (scroll) terlihat sinematik
             easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
             direction: 'vertical',
             gestureDirection: 'vertical',
@@ -305,9 +325,26 @@
         }
         requestAnimationFrame(raf);
 
+        // --- FUNGSI AUTO SCROLL UNTUK TAB ---
+        document.querySelectorAll('a.scroll-link').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault(); // Mencegah lompatan kasar bawaan browser
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if(targetElement) {
+                    // Menyuruh Lenis meluncur mulus ke elemen tersebut
+                    lenis.scrollTo(targetElement, {
+                        offset: 0,
+                        duration: 1.5,
+                        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t))
+                    });
+                }
+            });
+        });
+
         gsap.registerPlugin(ScrollTrigger);
 
-        // 2. Fungsi Pembungkus Teks
         const wrapWords = (element) => {
             const text = element.innerText;
             element.innerHTML = '';
@@ -322,7 +359,7 @@
         const statementText = document.getElementById('statement-text');
         wrapWords(statementText);
 
-        // 3. MASTER TIMELINE (Animasi Load Masuk - DIPERTAHANKAN)
+        // MASTER TIMELINE (Animasi Load Masuk)
         const tl = gsap.timeline();
 
         tl.to('.loader-text', { y: '0%', duration: 1, ease: 'power4.out', delay: 0.2 })
@@ -333,9 +370,7 @@
           .to('.hero-cta', { y: '0%', opacity: 1, duration: 1, ease: 'power4.out' }, "-=0.8")
           .to('.nav-item, .hero-scroll', { opacity: 1, duration: 1, ease: 'power2.out' }, "-=0.5");
 
-        // 4. SCROLL ANIMATIONS
-
-        // A. Efek Teks Menyala
+        // SCROLL ANIMATIONS
         const words = statementText.querySelectorAll('span');
         gsap.to(words, {
             scrollTrigger: {
@@ -349,7 +384,6 @@
             ease: "none"
         });
 
-        // B. Showcase Gambar Melebar & Pinning
         const showcaseTl = gsap.timeline({
             scrollTrigger: {
                 trigger: "#showcase-section",
@@ -377,56 +411,32 @@
             ease: "power2.out"
         }, 0.5);
 
-        // C. Transisi Area Putih (Fitur)
         gsap.from(".feature-header", {
-            scrollTrigger: {
-                trigger: ".feature-header",
-                start: "top 85%",
-            },
-            y: 50,
-            opacity: 0,
-            duration: 1,
-            stagger: 0.2,
-            ease: "power3.out"
+            scrollTrigger: { trigger: ".feature-header", start: "top 85%" },
+            y: 50, opacity: 0, duration: 1, stagger: 0.2, ease: "power3.out"
         });
 
         gsap.from(".feature-item", {
-            scrollTrigger: {
-                trigger: ".feature-item",
-                start: "top 80%",
-            },
-            y: 40,
-            opacity: 0,
-            duration: 1,
-            stagger: 0.15,
-            ease: "power3.out"
+            scrollTrigger: { trigger: ".feature-item", start: "top 80%" },
+            y: 40, opacity: 0, duration: 1, stagger: 0.15, ease: "power3.out"
         });
 
-        // D. Transisi Area Informasi Detail (BARU)
         gsap.from(".about-header", {
-            scrollTrigger: {
-                trigger: ".about-header",
-                start: "top 85%",
-            },
-            opacity: 0,
-            x: -30,
-            duration: 1,
-            ease: "power3.out"
+            scrollTrigger: { trigger: ".about-header", start: "top 85%" },
+            opacity: 0, x: -30, duration: 1, ease: "power3.out"
         });
 
         gsap.from(".about-item", {
-            scrollTrigger: {
-                trigger: ".about-header", // Terpicu bersamaan dengan header
-                start: "top 80%",
-            },
-            y: 40,
-            opacity: 0,
-            duration: 1,
-            stagger: 0.2,
-            ease: "power3.out"
+            scrollTrigger: { trigger: ".about-header", start: "top 80%" },
+            y: 40, opacity: 0, duration: 1, stagger: 0.2, ease: "power3.out"
         });
 
-        // E. Efek Parallax Teks Footer
+        // Animasi Legal Tab Baru
+        gsap.from(".legal-item", {
+            scrollTrigger: { trigger: ".legal-item", start: "top 85%" },
+            y: 30, opacity: 0, duration: 1, stagger: 0.2, ease: "power3.out"
+        });
+
         gsap.from(".footer-title", {
             scrollTrigger: {
                 trigger: ".footer-title",
@@ -434,9 +444,7 @@
                 end: "bottom bottom",
                 scrub: true,
             },
-            y: -100,
-            scale: 0.9,
-            opacity: 0.5
+            y: -100, scale: 0.9, opacity: 0.5
         });
 
     </script>
