@@ -1,0 +1,90 @@
+[
+  {
+    "id": "1",
+    "title": "Minecraft",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png",
+    "description": "Game sandbox open world legendaris. Bangun, eksplorasi, dan bertahan hidup di dunia blok tanpa batas.",
+    "genre": "Sandbox / Survival",
+    "rating": "9.5",
+    "size": "1 GB",
+    "players": "1-8",
+    "exe": "minecraft"
+  },
+  {
+    "id": "2",
+    "title": "GTA V",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/en/a/a5/Grand_Theft_Auto_V.png",
+    "description": "Dunia open world Los Santos yang luas. Jalani kehidupan kriminal atau bebas menjelajah kota.",
+    "genre": "Action / Open World",
+    "rating": "9.7",
+    "size": "72 GB",
+    "players": "1",
+    "exe": "gtav"
+  },
+  {
+    "id": "3",
+    "title": "Among Us",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/en/9/9a/Among_Us_cover_art.jpg",
+    "description": "Game deduksi sosial. Temukan siapa impostor di antara kru pesawat luar angkasa.",
+    "genre": "Multiplayer / Party",
+    "rating": "8.2",
+    "size": "500 MB",
+    "players": "4-15",
+    "exe": "amongus"
+  },
+  {
+    "id": "4",
+    "title": "Stardew Valley",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/en/f/fd/Logo_of_Stardew_Valley.png",
+    "description": "Bangun ladang impian, berteman dengan penduduk desa, dan jelajahi gua misterius.",
+    "genre": "Simulation / RPG",
+    "rating": "9.3",
+    "size": "500 MB",
+    "players": "1-4",
+    "exe": "stardew"
+  },
+  {
+    "id": "5",
+    "title": "Hollow Knight",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/en/thumb/1/17/Hollow_knight_silksong_art.jpg/220px-Hollow_knight_silksong_art.jpg",
+    "description": "Petualangan aksi di kerajaan serangga bawah tanah yang gelap dan indah.",
+    "genre": "Metroidvania / Action",
+    "rating": "9.4",
+    "size": "9 GB",
+    "players": "1",
+    "exe": "hollowknight"
+  },
+  {
+    "id": "6",
+    "title": "Terraria",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/en/1/1a/Terraria_Steam_artwork.jpg",
+    "description": "Gali, bangun, dan bertarung di dunia 2D yang penuh petualangan dan boss epik.",
+    "genre": "Sandbox / Action",
+    "rating": "9.1",
+    "size": "200 MB",
+    "players": "1-8",
+    "exe": "terraria"
+  },
+  {
+    "id": "7",
+    "title": "Celeste",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Celeste_box_art_full.png",
+    "description": "Platform game yang menantang sekaligus menyentuh hati. Panjat Gunung Celeste.",
+    "genre": "Platformer",
+    "rating": "9.5",
+    "size": "1.4 GB",
+    "players": "1",
+    "exe": "celeste"
+  },
+  {
+    "id": "8",
+    "title": "Cuphead",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/en/5/56/Cuphead_cover_art.jpg",
+    "description": "Run and gun bergaya animasi 1930an. Tantangan boss yang brutal dan visual memukau.",
+    "genre": "Action / Run & Gun",
+    "rating": "9.0",
+    "size": "3 GB",
+    "players": "1-2",
+    "exe": "cuphead"
+  }
+]
